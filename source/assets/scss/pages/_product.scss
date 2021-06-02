@@ -1,0 +1,17 @@
+.product-picture {
+  height: 165px;
+  @include md {
+    height: 255px;
+  }
+}
+
+.page-link {
+  color: $black;
+  &-active{
+    color: $details;
+    text-decoration: underline;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}

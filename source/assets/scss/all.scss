@@ -1,0 +1,37 @@
+// Configuration
+@import "../../../bootstrap5/scss/functions";
+@import "../../../bootstrap5/scss/variables";
+@import "../../../bootstrap5/scss/mixins";
+@import "../../../bootstrap5/scss/utilities";
+
+// Layout & components
+@import "../../../bootstrap5/scss/vendor/rfs";
+@import "../../../bootstrap5/scss/root";
+@import "../../../bootstrap5/scss/reboot";
+@import "../../../bootstrap5/scss/images";
+@import "../../../bootstrap5/scss/containers";
+@import "../../../bootstrap5/scss/grid";
+@import "../../../bootstrap5/scss/forms";
+@import "../../../bootstrap5/scss/buttons";
+@import "../../../bootstrap5/scss/transitions";
+@import "../../../bootstrap5/scss/nav";
+@import "../../../bootstrap5/scss/card";
+@import "../../../bootstrap5/scss/modal";
+
+
+// Helpers
+@import "../../../bootstrap5/scss/helpers";
+
+// Utilities
+@import "../../../bootstrap5/scss/utilities/api";
+
+// Custom
+@import "./helpers/mixin";
+@import "./base/type";
+
+@import "./pages/layout";
+@import "./pages/perfume";
+@import "./pages/product";
+
+
+

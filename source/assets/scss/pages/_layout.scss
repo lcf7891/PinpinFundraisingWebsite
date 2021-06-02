@@ -1,0 +1,14 @@
+.banner {
+    height: 840px;
+    background: url(../images/index1.jpg) center no-repeat;
+    background-size: cover;
+    @include md {
+        height: 870px;
+    }
+}
+
+.banner-footer {
+    height: 600px;
+    background: url(../images/index10.jpg) center no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/all.css">
+</head>
+
+<body>
+  
+  <header class="container">
+    <div class="row justify-content-between align-items-center py-2">
+      <div class="col">
+        <h1><a class="d-flex align-items-center" href="perfume.html"><img src="./assets/images/d’Perfume.png" alt="logo"></a></h1>
+      </div>
+      <nav class="col-lg-5 col-md-6 d-md-block d-none">
+        <ul class="nav d-flex justify-content-between align-items-center fz-lg-4 ENR">
+          <li class="nav-item"><a href="product.html" class="nav-link text-secondary"><span class="material-icons align-text-bottom">store</span>Product</a></li>
+          <li class="nav-item"><a href="login.html" class="nav-link text-secondary"><span class="material-icons align-text-bottom">person</span>log in</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-secondary"><span class="material-icons align-text-bottom">favorite</span>Wishlist</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-secondary"><span class="material-icons align-text-bottom">shopping_cart</span>Cart(3)</a></li>
+        </ul>
+      </nav>
+      <div class="col d-md-none d-flex justify-content-end align-items-center">
+        <a href="#" class="text-secondary me-4 position-relative"><span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-primary fz-1 text-white px-1">3</span><span class="material-icons align-text-bottom">shopping_cart</span></span></a>
+        <a href="#BurgerMenu" class="btn" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="BurgerMenu"><span class="material-icons text-secondary align-middle fz-7">menu</span></a>
+      </div>
+    </div>
+  </header>
+  
+  <ul class="collapse multi-collapse bg-spare text-white text-center fz-4 ENR z-index-5" id="BurgerMenu">
+    <li class="border border-white"><a class="text-white py-3" href="product.html">Product</a></li>
+    <li class="border border-white"><a class="text-white py-3" href="#">Wishlist</a></li>
+    <li class="border border-white"><a class="text-white py-3" href="#">Blog</a></li>
+    <li class="border border-white"><a class="text-white py-3" href="#">Contact</a></li>
+    <li class="border border-white"><a class="text-white py-3" href="login.html">log in</a></li>
+  </ul>
+
+  <%- contents %>
+
+  <footer class="bg-primary">
+    <div class="container">
+      <div class="row py-7 align-items-center">
+        <div class="col d-flex justify-content-md-start justify-content-between">
+          <a href="perfume.html"><img src="./assets/images/d’Perfumewhite.png" alt="logo"></a>
+          <p class="ENM fz-2 text-white align-self-center mb-0 ms-7">© 2020. All Rights Reserved.</p>
+        </div>
+        <div class="col-lg-3 col-md-4 d-md-block d-none">
+          <ul class="nav d-flex justify-content-between ENR fz-4">
+            <li class="nav-item"><a class="nav-link text-white" href="product.html">Product</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

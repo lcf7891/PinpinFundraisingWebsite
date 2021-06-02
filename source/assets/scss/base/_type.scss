@@ -1,0 +1,85 @@
+.CTL {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+}
+
+.CTR {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+}
+
+.CTM {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+}
+
+.CTB {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 700;
+}
+
+.ENL {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.ENR {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.ENM {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.ENB {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.ENK {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+
+//Reguler:400, Medium:500, Bold:700, Black:900,
+$font-weight: (
+    100: 100,
+    200: 200,
+    300: 300,
+    400: 400,
+    500: 500,
+    600: 600,
+    700: 700,
+    800: 800,
+    900: 900,
+);
+
+$font-size: (
+    1: 12px,
+    2: 14px,
+    3: 16px,
+    4: 20px,
+    5: 24px,
+    6: 28px,
+    7: 32px,
+    8: 40px,
+);
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $space: breakpoint-infix($breakpoint,$grid-breakpoints);
+        @each $size, $weight in $font-weight {
+            .fw#{$space}-#{$size} {
+                font-weight: $weight;
+            }
+        }
+        @each $size, $fz in $font-size {
+            .fz#{$space}-#{$size} {
+                font-size: $fz;
+            }
+        }
+    }
+}
