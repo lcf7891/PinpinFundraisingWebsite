@@ -1,50 +1,11 @@
-.CTL {
+// font-weight: {Thin:100, Extra-light:200, Light:300, Regular:400, Medium:500, Semi-bold:600, Bold:700, Extra-bold:800, Black:900}
+.TC {
     font-family: 'Noto Sans TC', sans-serif;
-    font-weight: 300;
+}
+.BT {
+    font-family: 'Baloo Tamma 2', cursive, sans-serif;
 }
 
-.CTR {
-    font-family: 'Noto Sans TC', sans-serif;
-    font-weight: 400;
-}
-
-.CTM {
-    font-family: 'Noto Sans TC', sans-serif;
-    font-weight: 500;
-}
-
-.CTB {
-    font-family: 'Noto Sans TC', sans-serif;
-    font-weight: 700;
-}
-
-.ENL {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-}
-
-.ENR {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-}
-
-.ENM {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-}
-
-.ENB {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-}
-
-.ENK {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-}
-
-
-//Reguler:400, Medium:500, Bold:700, Black:900,
 $font-weight: (
     100: 100,
     200: 200,
@@ -68,6 +29,7 @@ $font-size: (
     8: 40px,
 );
 
+// Bootstrap
 @each $breakpoint in map-keys($grid-breakpoints) {
     @include media-breakpoint-up($breakpoint) {
         $space: breakpoint-infix($breakpoint,$grid-breakpoints);
