@@ -13,8 +13,69 @@
 </head>
 
 <body>
-  
 
+  <nav class="border-bottom border-primary border-5">
+    <div class="container">
+      <div class="row justify-content-between py-md-3 py-2">
+
+        <div class="col d-flex align-items-center">
+          <h1 class="me-5"><a href="index.html"><img src="./assets/images/logo.jpg" class="nav-logo" alt="logo"></a></h1>
+          <ul class="list-unstyled d-md-flex d-none align-items-center">
+            <li class="me-5"><a href="#" class="link-dark">關於</a></li>
+            <li class="me-5"><a href="#" class="link-dark">挖寶</a></li>
+            <li><a href="#" class="link-dark">我有個大膽的想法</a></li>
+          </ul>
+        </div>
+        
+        <ul class="col-3 list-unstyled d-md-flex d-none align-items-center">
+          <li class="ms-auto me-3"><a href="#" class="btn btn-primary btn-hover text-dark fw-700 border-2 rounded-pill px-6" data-bs-toggle="modal" data-bs-target="#signUpModal">登入</a></li>
+          <li ><a href="#" class="btn btn-outline-gray btn-hover-outline fw-700 border-2 rounded-pill px-6">註冊</a></li>
+        </ul>
+
+        <a class="col d-md-none d-flex align-items-center justify-content-end ms-auto" data-bs-toggle="collapse" href="#BurgerMenu" role="button" aria-expanded="false" aria-controls="BurgerMenu">
+          <span class="material-icons text-gray fz-7">menu</span>
+        </a>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- collapse -->
+  <div class="collapse" id="BurgerMenu">
+    <ul class="list-unstyled text-center">
+      <li><a href="#" class="border border-dark rounded-0 w-100 btn btn-primary btn-hover text-dark fw-700">關於</a></li>
+      <li><a href="#" class="border border-dark rounded-0 w-100 btn btn-primary btn-hover text-dark fw-700">挖寶</a></li>
+      <li><a href="#" class="border border-dark rounded-0 w-100 btn btn-primary btn-hover text-dark fw-700" data-bs-toggle="modal" data-bs-target="#signUpModal">登入</a></li>
+      <li><a href="#" class="border border-dark rounded-0 w-100 btn btn-primary btn-hover text-dark fw-700">註冊</a></li>
+    </ul>
+  </div>
+
+   <!-- Modal -->
+   <div class="modal" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content text-secondary">
+        <div class="modal-header mb-2">
+          <h5 class="modal-titlefz-6 fw-700 m-0">登入</h5>
+          <button type="button" class="btn p-0 m-0" data-bs-dismiss="modal" aria-label="Close"><span class="material-icons align-bottom">close</span></button>
+        </div>
+        <form class="modal-body mb-5">
+          <div class="mb-3">
+            <label for="accountInput1" class="form-label">帳號</label>
+            <input type="email" class="form-control border-0 input-bg" id="accountInput1" placeholder="請輸入帳號">
+          </div>
+          <div class="mb-2">
+            <label for="passwordInput1" class="form-label">密碼</label>
+            <input type="password" class="form-control border-0 input-bg" id="passwordInput1" placeholder="請輸入密碼">
+          </div>
+          <a href="#" class="d-block text-gray fz-2 mb-3">忘記密碼？</a>
+          <a href="#" class="d-block btn btn-primary btn-hover rounded-pill text-dark">登入</a>
+        </form>
+        <div class="modal-footer justify-content-center position-relative">
+          <a href="#" class="text-gray fz-2 position-absolute bottom-50 bg-white px-3">還沒有帳號？ 註冊一個帳號</a>
+        </div>
+      </div>
+    </div>
+   </div>
 
   <%- contents %>
 

@@ -1,7 +1,7 @@
 const srcPath = './source';
 const distPath = './public';
 const nodePath = './node_modules';
-const BSPath = './bootstrap';
+// const BSPath = './bootstrap';
 
 let envOptions = {
   string: 'env',
@@ -46,7 +46,7 @@ let envOptions = {
   vendors: {
     src: [
       `${nodePath}/jquery/dist/**/jquery.min.js`,
-      `${BSPath}/dist/**/bootstrap.min.js`,
+      `${srcPath}/assets/bootstrap/dist/js/bootstrap.min.js`,
     ],
     concat: 'vendors.js',
     path: `${distPath}/assets/js`,

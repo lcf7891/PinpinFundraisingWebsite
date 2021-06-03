@@ -161,14 +161,15 @@ address {
 
 ol,
 ul {
-  padding-left: 2rem;
+  padding-left: 0;
+  text-decoration: none;
 }
 
 ol,
 ul,
 dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 ol ol,
@@ -245,7 +246,7 @@ sup { top: -.5em; }
 
 a {
   color: $link-color;
-  text-decoration: $link-decoration;
+  text-decoration: none;
 
   &:hover {
     color: $link-hover-color;
