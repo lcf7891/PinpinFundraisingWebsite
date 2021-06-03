@@ -1,90 +1,91 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-TW">
+  <html lang="zh-Hant-TW">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>首頁</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/all.css">
-</head>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>首頁</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+      <link rel="stylesheet" href="./assets/css/all.css">
+    </head>
 
-<body>
+    <body>
 
-  <nav class="border-bottom border-primary border-5">
-    <div class="container">
-      <div class="row justify-content-between py-md-3 py-2">
-
-        <div class="col d-flex align-items-center">
-          <h1 class="me-5"><a href="index.html"><img src="./assets/images/logo.jpg" class="nav-logo" alt="logo"></a></h1>
-          <ul class="list-unstyled d-md-flex d-none align-items-center">
-            <li class="me-5"><a href="#" class="link-dark">關於</a></li>
-            <li class="me-5"><a href="#" class="link-dark">挖寶</a></li>
-            <li><a href="#" class="link-dark">我有個大膽的想法</a></li>
-          </ul>
+      <nav class="border-bottom border-primary border-5">
+        <div class="container">
+          <div class="row justify-content-between py-md-3 py-2">
+            <div class="col d-flex align-items-center">
+              <h1 class="me-5"><a href="index.html"><img src="./assets/images/logo.jpg" class="nav-logo" alt="logo"></a></h1>
+              <ul class="list-unstyled d-md-flex d-none align-items-center">
+                <li class="me-5"><a href="#" class="link-dark">關於</a></li>
+                <li class="me-5"><a href="#" class="link-dark">挖寶</a></li>
+                <li><a href="#" class="link-dark">我有個大膽的想法</a></li>
+              </ul>
+            </div>       
+            <ul class="col-3 list-unstyled d-md-flex d-none align-items-center">
+              <li class="ms-auto me-3"><a href="#" class="btn btn-primary btn-hover text-dark fw-700 border-2 rounded-pill px-6" data-bs-toggle="modal" data-bs-target="#signUpModal">登入</a></li>
+              <li ><a href="#" class="btn btn-outline-gray btn-hover-outline fw-700 border-2 rounded-pill px-6">註冊</a></li>
+            </ul>
+            <a class="col d-md-none d-flex align-items-center justify-content-end ms-auto text-decoration-none" data-bs-toggle="collapse" href="#BurgerMenu" role="button" aria-expanded="false" aria-controls="BurgerMenu">
+              <span class="material-icons text-gray fz-7">menu</span>
+            </a>
+          </div>
         </div>
-        
-        <ul class="col-3 list-unstyled d-md-flex d-none align-items-center">
-          <li class="ms-auto me-3"><a href="#" class="btn btn-primary btn-hover text-dark fw-700 border-2 rounded-pill px-6" data-bs-toggle="modal" data-bs-target="#signUpModal">登入</a></li>
-          <li ><a href="#" class="btn btn-outline-gray btn-hover-outline fw-700 border-2 rounded-pill px-6">註冊</a></li>
+      </nav>
+
+      <!-- collapse -->
+      <div class="collapse" id="BurgerMenu">
+        <ul class="list-unstyled text-center">
+          <li><a href="#" class="border border-dark rounded-0 w-100 btn btn-primary btn-hover text-dark fw-700">關於</a></li>
+          <li><a href="#" class="border border-dark rounded-0 w-100 btn btn-primary btn-hover text-dark fw-700">挖寶</a></li>
+          <li><a href="#" class="border border-dark rounded-0 w-100 btn btn-primary btn-hover text-dark fw-700" data-bs-toggle="modal" data-bs-target="#signUpModal">登入</a></li>
+          <li><a href="#" class="border border-dark rounded-0 w-100 btn btn-primary btn-hover text-dark fw-700">註冊</a></li>
         </ul>
-
-        <a class="col d-md-none d-flex align-items-center justify-content-end ms-auto" data-bs-toggle="collapse" href="#BurgerMenu" role="button" aria-expanded="false" aria-controls="BurgerMenu">
-          <span class="material-icons text-gray fz-7">menu</span>
-        </a>
-
       </div>
-    </div>
-  </nav>
 
-  <!-- collapse -->
-  <div class="collapse" id="BurgerMenu">
-    <ul class="list-unstyled text-center">
-      <li><a href="#" class="border border-dark rounded-0 w-100 btn btn-primary btn-hover text-dark fw-700">關於</a></li>
-      <li><a href="#" class="border border-dark rounded-0 w-100 btn btn-primary btn-hover text-dark fw-700">挖寶</a></li>
-      <li><a href="#" class="border border-dark rounded-0 w-100 btn btn-primary btn-hover text-dark fw-700" data-bs-toggle="modal" data-bs-target="#signUpModal">登入</a></li>
-      <li><a href="#" class="border border-dark rounded-0 w-100 btn btn-primary btn-hover text-dark fw-700">註冊</a></li>
-    </ul>
-  </div>
-
-   <!-- Modal -->
-   <div class="modal" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content text-secondary">
-        <div class="modal-header mb-2">
-          <h5 class="modal-titlefz-6 fw-700 m-0">登入</h5>
-          <button type="button" class="btn p-0 m-0" data-bs-dismiss="modal" aria-label="Close"><span class="material-icons align-bottom">close</span></button>
-        </div>
-        <form class="modal-body mb-5">
-          <div class="mb-3">
-            <label for="accountInput1" class="form-label">帳號</label>
-            <input type="email" class="form-control border-0 input-bg" id="accountInput1" placeholder="請輸入帳號">
+      <!-- Modal -->
+      <div class="modal" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content text-secondary">
+            <div class="modal-header mb-2">
+              <h5 class="modal-titlefz-6 fw-700 m-0">登入</h5>
+              <button type="button" class="btn p-0 m-0" data-bs-dismiss="modal" aria-label="Close"><span class="material-icons align-bottom">close</span></button>
+            </div>
+            <form class="modal-body mb-5">
+              <div class="mb-3">
+                <label for="accountInput1" class="form-label">帳號</label>
+                <input type="email" class="form-control border-0 input-bg" id="accountInput1" placeholder="請輸入帳號">
+              </div>
+              <div class="mb-2">
+                <label for="passwordInput1" class="form-label">密碼</label>
+                <input type="password" class="form-control border-0 input-bg" id="passwordInput1" placeholder="請輸入密碼">
+              </div>
+              <a href="#" class="d-block text-gray fz-2 mb-3">忘記密碼？</a>
+              <a href="#" class="d-block btn btn-primary btn-hover border-2 rounded-pill text-dark">登入</a>
+            </form>
+            <div class="modal-footer justify-content-center position-relative mx-3">
+              <a href="#" class="text-gray fz-2 position-absolute bottom-50 bg-white px-3">還沒有帳號？ 註冊一個帳號</a>
+            </div>
           </div>
-          <div class="mb-2">
-            <label for="passwordInput1" class="form-label">密碼</label>
-            <input type="password" class="form-control border-0 input-bg" id="passwordInput1" placeholder="請輸入密碼">
-          </div>
-          <a href="#" class="d-block text-gray fz-2 mb-3">忘記密碼？</a>
-          <a href="#" class="d-block btn btn-primary btn-hover rounded-pill text-dark">登入</a>
-        </form>
-        <div class="modal-footer justify-content-center position-relative">
-          <a href="#" class="text-gray fz-2 position-absolute bottom-50 bg-white px-3">還沒有帳號？ 註冊一個帳號</a>
         </div>
       </div>
-    </div>
-   </div>
 
-  
+      <header class="container mb-md-5 mb-6 pt-md-5 pt-3">
+        <p class="d-inline-block bg-gray rounded rounded-3 text-white py-1 px-3 mb-2">魔法科技</p>
+        <h1 class="text-secondary fz-md-7 fz-6">拍出會動的照片｜LivePhotos 魔法拍立得</h1>
+      </header>
 
-  <footer class="bg-secondary py-md-6 py-3">
-    <p class="text-center text-white fz-md-3 fz-2 mb-0">Copyright © 拼拼 All rights reserved.</p>
-  </footer>
-  
-  <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/all.js"></script>
-</body>
+      
 
-</html>
+      <footer class="bg-secondary py-md-6 py-3">
+        <p class="text-center text-white fz-md-3 fz-2 mb-0">Copyright © 拼拼 All rights reserved.</p>
+      </footer>
+      
+      <script src="./assets/js/vendors.js"></script>
+      <script src="./assets/js/all.js"></script>
+    </body>
+
+  </html>

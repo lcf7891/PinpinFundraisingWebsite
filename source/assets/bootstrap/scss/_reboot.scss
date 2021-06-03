@@ -246,7 +246,7 @@ sup { top: -.5em; }
 
 a {
   color: $link-color;
-  text-decoration: none;
+  text-decoration: $link-decoration;
 
   &:hover {
     color: $link-hover-color;

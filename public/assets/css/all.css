@@ -208,6 +208,7 @@ a {
 
 a:hover {
   color: #ccb251;
+  text-decoration: underline;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -2803,7 +2804,6 @@ textarea.form-control-lg {
   line-height: 1.5;
   color: #212529;
   text-align: center;
-  text-decoration: none;
   vertical-align: middle;
   cursor: pointer;
   -webkit-user-select: none;
@@ -2826,6 +2826,7 @@ textarea.form-control-lg {
 
 .btn:hover {
   color: #212529;
+  text-decoration: none;
 }
 
 .btn-check:focus + .btn, .btn:focus {
@@ -3481,11 +3482,16 @@ fieldset:disabled .btn {
 .btn-link {
   font-weight: 400;
   color: #FFDF65;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .btn-link:hover {
   color: #ccb251;
+  text-decoration: underline;
+}
+
+.btn-link:focus {
+  text-decoration: underline;
 }
 
 .btn-link:disabled, .btn-link.disabled {
