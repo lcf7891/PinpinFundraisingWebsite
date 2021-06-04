@@ -9,6 +9,7 @@
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
       <link rel="stylesheet" href="./assets/css/all.css">
     </head>
 
@@ -75,25 +76,70 @@
 
       <header class="container mb-md-5 mb-6 pt-md-5 pt-3">
         <p class="d-inline-block bg-gray rounded rounded-3 text-white py-1 px-3 mb-2">魔法科技</p>
-        <h1 class="text-secondary fw-700 fz-md-7 fz-6 mb-md-3 mb-2">拍出會動的照片｜LivePhotos 魔法拍立得</h1>
+        <h1 class="fw-700 fz-md-7 fz-6 mb-md-3 mb-2"><a href="#" class="link-secondary lh-base">拍出會動的照片｜<br class="d-md-none d-block"> LivePhotos 魔法拍立得</a></h1>
         <div class="row">
           <div class="col-md-6 col-12">
-            <img src="./assets/images/produt_image.jpg" class="img-fluid" alt="produt_image">
+            <img src="./assets/images/produt_image.jpg" class="img-fluid mb-3" alt="produt_image">
           </div>
           <div class="col-md-6 col-12">
             <p class="text-dark fz-2">目標 $600,000</p>
+            <p class="text-secondary fz-7 fw-700">$280,047</p>
+            <div class="progress">
+              <div class="progress-bar rounded-pill w-40 text-gray fw-600" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">41%</div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <p class="text-secondary fz-7 fw-700"><span class="text-dark fz-2 fw-400">贊助人數</span><br>1374 人</p>
+              </div>
+              <div class="col-6">
+                <p class="text-secondary fz-7 fw-700"><span class="text-dark fz-2 fw-400">募資倒數</span><br>27 天</p>
+              </div>
+            </div>
+            <ul class="list-unstyled d-flex justify-content-md-start justify-content-between align-items-center mb-3">
+              <li class="me-md-4 me-3"><img src="./assets/images/icon_good01.svg" class="icon-size align-bottom" alt="CertificationMark" data-bs-toggle="tooltip" data-bs-placement="top"  title="認證標章"><span class="d-md-none text-dark fz-1 ms-2">認證標章</span></li>
+              <li class="me-md-4 me-3" tabindex="0" data-bs-toggle="top popover" data-bs-trigger="hover focus" data-bs-content="品質保證"><img src="./assets/images/icon_good02.svg" class="icon-size align-bottom" alt="QualityAssurance"><span class="d-md-none text-dark fz-1 ms-2">品質保證</span></li>
+              <li class="me-md-4 me-3" tabindex="0" data-bs-toggle="top popover" data-bs-trigger="hover focus" data-bs-content="原生創意"><img src="./assets/images/icon_good03.svg" class="icon-size align-bottom" alt="OriginalCreativity"><span class="d-md-none text-dark fz-1 ms-2">原生創意</span></li>
+              <li data-bs-toggle="tooltip" data-bs-placement="top hover focus" title data-bs-content="人氣王"><img src="./assets/images/icon_good04.svg" class="icon-size align-bottom" alt="PopularityKing"><span class="d-md-none text-dark fz-1 ms-2">人氣王</span></li>
+            </ul>
+
+            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title data-bs-original-title="Tooltip on top">
+              Tooltip on top
+            </button>
+
+            <div class="border-start border-primary border-5 rounded-start p-3">
+              <p class="text-dark">
+                專案募資中！<br>
+                在 2021/06/14 23:59 募資結束前，您都可以贊助我們！
+              </p>
+            </div>
+            <ul class="row list-unstyled">
+              <li class="col"><a href="#">贊助專案</a></li>
+              <li class="col"><a href="#">追蹤專案</a></li>
+              <li class="col"><a href="#">分享</a></li>
+            </ul>
           </div>
         </div>
       </header>
 
+      
       <%- contents %>
 
       <footer class="bg-secondary py-md-6 py-3">
         <p class="text-center text-white fz-md-3 fz-2 mb-0">Copyright © 拼拼 All rights reserved.</p>
       </footer>
       
+      
       <script src="./assets/js/vendors.js"></script>
       <script src="./assets/js/all.js"></script>
+
+      <script>
+        // tooltip
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+      </script>
+     
     </body>
 
   </html>

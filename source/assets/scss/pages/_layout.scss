@@ -1,7 +1,15 @@
-.nav-logo {
+.logo {
     width: 110px;
     height: 40px;
 }
 .input-bg {
     background-color: #f7f7f7;
+}
+.icon-size {
+    width: 20px;
+    height: 20px;
+    @include md {
+        width: 24px;
+        height: 24px;
+    }
 }
