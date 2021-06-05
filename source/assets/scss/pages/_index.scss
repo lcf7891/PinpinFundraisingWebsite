@@ -16,9 +16,12 @@
         height: 24px;
     }
 }
-.nav-active {
+.nav .active {
     font-weight: 700;
     border-bottom: 2px solid $primary;
+}
+.text-justify {
+    text-align: justify;
 }
 .letter-spacing {
     letter-spacing: 2px;

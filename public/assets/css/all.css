@@ -3612,6 +3612,8 @@ fieldset:disabled .btn {
   color: #495057;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
+  font-weight: 700;
+  border-bottom: 2px solid #FFDF65;
 }
 
 .nav-tabs .dropdown-menu {
@@ -9924,9 +9926,13 @@ body {
   }
 }
 
-.nav-active {
+.nav .active {
   font-weight: 700;
   border-bottom: 2px solid #FFDF65;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .letter-spacing {
