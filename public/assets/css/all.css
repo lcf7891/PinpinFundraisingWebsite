@@ -9622,4 +9622,8 @@ body {
   border-bottom: 2px solid #FFDF65;
 }
 
+.nav-letter-spacing {
+  letter-spacing: 2px;
+}
+
 /*# sourceMappingURL=all.css.map */
