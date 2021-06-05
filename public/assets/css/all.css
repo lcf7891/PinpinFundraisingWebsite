@@ -9622,8 +9622,12 @@ body {
   border-bottom: 2px solid #FFDF65;
 }
 
-.nav-letter-spacing {
+.letter-spacing {
   letter-spacing: 2px;
+}
+
+.letter-spacing-h2 {
+  letter-spacing: 2.5px;
 }
 
 /*# sourceMappingURL=all.css.map */
