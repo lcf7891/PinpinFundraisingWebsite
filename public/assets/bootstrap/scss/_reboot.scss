@@ -94,31 +94,43 @@ hr:not([size]) {
 h1 {
   @extend %heading;
   @include font-size($h1-font-size);
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
   @extend %heading;
   @include font-size($h2-font-size);
+  margin: 0;
+  padding: 0;
 }
 
 h3 {
   @extend %heading;
   @include font-size($h3-font-size);
+  margin: 0;
+  padding: 0;
 }
 
 h4 {
   @extend %heading;
   @include font-size($h4-font-size);
+  margin: 0;
+  padding: 0;
 }
 
 h5 {
   @extend %heading;
   @include font-size($h5-font-size);
+  margin: 0;
+  padding: 0;
 }
 
 h6 {
   @extend %heading;
   @include font-size($h6-font-size);
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -128,8 +140,10 @@ h6 {
 // bottom margin to use `rem` units instead of `em`.
 
 p {
-  margin-top: 0;
-  margin-bottom: $paragraph-margin-bottom;
+  // margin-top: 0;
+  // margin-bottom: $paragraph-margin-bottom;
+  margin: 0;
+  padding: 0;
 }
 
 

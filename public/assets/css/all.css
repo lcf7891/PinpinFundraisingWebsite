@@ -72,6 +72,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 1200px) {
@@ -82,6 +84,8 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: calc(1.325rem + 0.9vw);
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 1200px) {
@@ -92,6 +96,8 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: calc(1.3rem + 0.6vw);
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 1200px) {
@@ -102,6 +108,8 @@ h3, .h3 {
 
 h4, .h4 {
   font-size: calc(1.275rem + 0.3vw);
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 1200px) {
@@ -112,15 +120,19 @@ h4, .h4 {
 
 h5, .h5 {
   font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
 }
 
 h6, .h6 {
   font-size: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
 abbr[title],
@@ -9538,8 +9550,8 @@ body {
   transition-duration: 0.3s;
 }
 
-.curtain-up:hover a {
-  color: #fff !important;
+.curtain-up:hover {
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -9578,17 +9590,6 @@ body {
   color: #858377 !important;
   background-color: #FFDF65;
   border: 2px solid #FFDF65;
-}
-
-.nav-hover {
-  cursor: pointer;
-  border-bottom: 2px solid transparent;
-}
-
-.nav-hover:hover {
-  font-weight: 600;
-  border: 0;
-  border-bottom: 2px solid #494846;
 }
 
 .logo {
