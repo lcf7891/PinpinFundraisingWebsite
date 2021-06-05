@@ -20,6 +20,9 @@
     font-weight: 700;
     border-bottom: 2px solid $primary;
 }
-.nav-letter-spacing {
+.letter-spacing {
     letter-spacing: 2px;
+    &-h2 {
+        letter-spacing: 2.5px
+    }
 }
