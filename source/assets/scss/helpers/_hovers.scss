@@ -1,8 +1,7 @@
 .zoom:hover {
     transform: scale(1.5, 1.5);
 }
-
-.CurtainUp {
+.curtain-up {
     &:hover a {
             color: $white !important;
             text-decoration: none;
@@ -41,4 +40,14 @@
     color: $gray-0 !important;
     background-color: $primary;
     border: 2px solid $primary;
+}
+.nav-hover {
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    &:hover {
+        font-weight: 600;
+        border: 0;
+        border-bottom: 2px solid $secondary;
+    }
+    
 }

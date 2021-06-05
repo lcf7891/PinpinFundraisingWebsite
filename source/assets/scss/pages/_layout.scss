@@ -5,6 +5,9 @@
 .input-bg {
     background-color: #f7f7f7;
 }
+.rounded-r {
+    border-radius: 32px;
+}
 .icon-size {
     width: 20px;
     height: 20px;
@@ -12,4 +15,8 @@
         width: 24px;
         height: 24px;
     }
+}
+.nav-active {
+    font-weight: 700;
+    border-bottom: 2px solid $primary;
 }
