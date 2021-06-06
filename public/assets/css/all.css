@@ -9941,10 +9941,6 @@ body {
   letter-spacing: 2px;
 }
 
-.letter-spacing-lg {
-  letter-spacing: 6px;
-}
-
 .custom-shadow {
   box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.15);
 }
