@@ -9951,4 +9951,16 @@ body {
   box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.15);
 }
 
+.schedule-img {
+  width: 135px;
+  height: 132px;
+}
+
+@media (min-width: 768px) {
+  .schedule-img {
+    width: 220px;
+    height: 168px;
+  }
+}
+
 /*# sourceMappingURL=all.css.map */
