@@ -436,6 +436,65 @@
                   </div>
                 </div>
               </div>
+              <!-- Sponsorship form -->
+              <div class="d-md-none d-block">
+                <img src="./assets/images/icon_heart.svg" class="mx-auto d-block" alt="sponsor-icon">
+                <div class="text-center mb-md-4 mb-3">
+                  <div class="d-flex justify-content-center align-items-center flex-wrap border-bottom border-primary border-3 position-relative pt-4">
+                    <h3 class="fz-md-6 fz-5 position-absolute top-50 bg-white px-3">贊助專案</h3>
+                  </div>
+                </div>
+                <form id="form" class="text-secondary needs-validation" novalidate>
+                  <div class="pt-3 mb-3">
+                    <label class="form-label fz-md-3 fz-2" for="inputGroupSelect01">贊助方案</label>
+                    <select class="form-select border-0 bg-light" id="inputGroupSelect01" required>
+                      <option selected>請選擇一個方案...</option>
+                      <option value="1">方案一</option>
+                      <option value="2">方案二</option>
+                      <option value="3">方案三</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      請選擇贊助方案
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="nameInput1" class="form-label fz-md-3 fz-2">收件人姓名</label>
+                    <input type="text" class="form-control border-0 bg-light" id="nameInput1" placeholder="王曉明" required>
+                    <div class="invalid-feedback">
+                      請輸入收件人姓名
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="phoneInput1" class="form-label fz-md-3 fz-2">聯絡電話</label>
+                    <input type="tel" class="form-control border-0 bg-light" id="phoneInput1" placeholder="0123456789" required>
+                    <div class="invalid-feedback">
+                      請輸入聯絡電話
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="emailInput1" class="form-label fz-md-3 fz-2">連絡信箱</label>
+                    <input type="email" class="form-control border-0 bg-light" id="emailInput1" placeholder="name@example.com" required>
+                    <div class="invalid-feedback">
+                      請輸入連絡信箱
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label fz-md-3 fz-2" for="inputGroupSelect02">付款方式</label>
+                    <select class="form-select border-0 bg-light" id="inputGroupSelect02" required>
+                      <option selected>信用卡付款</option>
+                      <option value="1">線上轉帳</option>
+                      <option value="2">融資!</option>
+                      <option value="3">ATM</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      請選擇付款方式
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="col-md-2 col-12 btn btn-primary btn-hover border-2 rounded-pill text-dark fz-md-5 fw-700 px-md-5 py-md-2">贊助專案</button>
+                  </div>
+                </form>
+              </div>  
             </aside>
             
           </div>
