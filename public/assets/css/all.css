@@ -3612,8 +3612,6 @@ fieldset:disabled .btn {
   color: #495057;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
-  font-weight: 700;
-  border-bottom: 2px solid #FFDF65;
 }
 
 .nav-tabs .dropdown-menu {
@@ -9943,7 +9941,7 @@ body {
   letter-spacing: 2px;
 }
 
-.letter-spacing-h2 {
+.letter-spacing-lg {
   letter-spacing: 6px;
 }
 
@@ -9961,6 +9959,11 @@ body {
     width: 220px;
     height: 168px;
   }
+}
+
+.link-icon {
+  width: 30px;
+  height: 30px;
 }
 
 /*# sourceMappingURL=all.css.map */
