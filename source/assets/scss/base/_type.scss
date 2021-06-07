@@ -2,6 +2,30 @@ body {
     font-family: 'Noto Sans TC', sans-serif;
   }
   
+// 載入字型
+// $font-family-noto-sans: "Noto Sans TC", sans-serif;
+// $font-family-baloo-tamma-2: "Baloo Tamma 2", cursive;
+
+// :root {
+//     --#{$variable-prefix}font-family-noto-sans: #{inspect(
+//             $font-family-noto-sans
+//         )};
+//     --#{$variable-prefix}font-family-baloo-tamma-2: #{inspect(
+//             $font-family-baloo-tamma-2
+//         )};
+// }
+
+// $theme-colors: map-merge($theme-colors, $custom-colors);
+// $utilities: (
+//     "font-family": (
+//         property: font-family,
+//         class: font,
+//         values: (
+//             baloo-tamma-2: var(--#{$variable-prefix}font-family-baloo-tamma-2),
+//         ),
+//     ),
+// );
+
 // font-weight: {Thin:100, Extra-light:200, Light:300, Regular:400, Medium:500, Semi-bold:600, Bold:700, Extra-bold:800, Black:900}
 .BT {
     font-family: 'Baloo Tamma 2', cursive, sans-serif;
