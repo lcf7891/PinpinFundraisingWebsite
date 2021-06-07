@@ -9962,9 +9962,4 @@ body {
   height: 30px;
 }
 
-.position-top {
-  height: calc(100vh - 90px);
-  top: 90px;
-}
-
 /*# sourceMappingURL=all.css.map */
