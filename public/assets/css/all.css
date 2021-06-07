@@ -9965,7 +9965,7 @@ body {
 .side-sticky {
   height: calc(100vh - 90px);
   top: 90px;
-  overflow-y: scroll;
+  overflow: auto;
 }
 
 /*# sourceMappingURL=all.css.map */
