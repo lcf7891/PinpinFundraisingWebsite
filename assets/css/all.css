@@ -9909,7 +9909,7 @@ body {
 }
 
 .rounded-r {
-  border-radius: 32px;
+  border-radius: 45px;
 }
 
 .icon-size {
@@ -9962,10 +9962,14 @@ body {
   height: 30px;
 }
 
-.sidebar-sticky {
-  height: calc(100vh - 90px);
-  top: 90px;
-  overflow: auto;
+@media (min-width: 768px) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    height: calc(100vh - 90px);
+    top: 90px;
+    overflow: auto;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */
