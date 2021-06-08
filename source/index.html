@@ -12,16 +12,15 @@
     </head>
 
     <body>
-
       <nav class="border-bottom border-primary border-5 py-2">
         <div class="container">
           <div class="d-flex flex-wrap flex-md-nowrap justify-content-between">
-            <div class="align-self-center">
-              <h1 class="me-6"><a href="index.html"><img src="./assets/images/logo.jpg" class="d-block logo" alt="拼拼logo"></a></h1>
-            </div> 
+            <h1 class="align-self-center me-6"><a href="index.html"><img src="./assets/images/logo.jpg" class="d-block logo" alt="拼拼logo"></a></h1>
+            <!-- mobile Burger menu -->
             <botton class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#BurgerMenu" aria-expanded="false" aria-controls="BurgerMenu">
               <i class="fas fa-bars text-gray fz-7"></i>
             </botton>
+            <!-- mobile Burger menu end -->
             <div class="navbar-collapse collapse d-md-flex" id="BurgerMenu">
               <ul class="list-unstyled navbar flex-md-row flex-column align-items-start me-auto">
                 <li class="nav-item me-3"><a href="#" class="nav-link link-dark">關於</a></li>
@@ -36,7 +35,6 @@
           </div>
         </div>
       </nav>
-
       <!-- Modal -->
       <div class="modal" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -63,41 +61,38 @@
           </div>
         </div>
       </div>
-
+      <!-- Modal end -->
+      
       <header class="bg-light pb-md-5 pb-6 pt-md-5 pt-3">
         <section class="container">
           <p class="d-inline-block bg-gray rounded rounded-3 text-white py-1 px-3 mb-md-1 mb-2">魔法科技</p>
           <h2 class="fw-700 fz-md-7 fz-6 mb-md-4 mb-3"><a href="#" class="link-secondary letter-spacing lh-base">拍出會動的照片｜<br class="d-md-none d-block"> LivePhotos 魔法拍立得</a></h2>
           <div class="row">
-            <div class="col-md-7">
-              <img src="./assets/images/produt_image.jpg" class="img-fluid rounded-r mb-3" alt="produt_image">
-            </div>
+            <img src="./assets/images/produt_image.jpg" class="col-md-7 img-fluid rounded-r mb-3" alt="produt_image">
             <div class="col-md-5">
               <p class="text-dark fz-2 mb-2">目標<span class="BT">$600,000</span></p>
               <p class="text-secondary BT fz-7 fw-700 lh-lg mb-2">$280,047</p>
               <div class="progress rounded-pill">
                 <div class="progress-bar w-40 text-gray fw-600" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">41%</div>
               </div>
-              <div class="row mb-3">
-                <div class="col-6">
+              <ul class="row list-unstyled mb-3">
+                <li class="col-6">
                   <p class="text-secondary fz-7 fw-600 mb-2"><span class="text-dark fz-2 fw-400">贊助人數</span><br><span class="BT">1374</span> 人</p>
-                </div>
-                <div class="col-6">
+                </li>
+                <li class="col-6">
                   <p class="text-secondary fz-7 fw-600 mb-2"><span class="text-dark fz-2 fw-400">募資倒數</span><br><span class="BT">27</span> 天</p>
-                </div>
-              </div>
+                </li>
+              </ul>
               <ul class="list-unstyled d-flex justify-content-md-start justify-content-between align-items-center mb-3">
                 <li class="me-md-4 me-3" data-bs-toggle="tooltip" data-bs-placement="top"  title="認證標章"><img src="./assets/images/icon_good01.svg" class="icon-size align-bottom" alt="CertificationMark"><span class="d-md-none text-dark fz-1 ms-2">認證標章</span></li>
                 <li class="me-md-4 me-3" data-bs-toggle="tooltip" data-bs-placement="top" title="品質保證"><img src="./assets/images/icon_good02.svg" class="icon-size align-bottom" alt="QualityAssurance"><span class="d-md-none text-dark fz-1 ms-2">品質保證</span></li>
                 <li class="me-md-4 me-3" data-bs-toggle="tooltip" data-bs-placement="top" title="原生創意"><img src="./assets/images/icon_good03.svg" class="icon-size align-bottom" alt="OriginalCreativity"><span class="d-md-none text-dark fz-1 ms-2">原生創意</span></li>
                 <li data-bs-toggle="tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="人氣王"><img src="./assets/images/icon_good04.svg" class="icon-size align-bottom" alt="PopularityKing"><span class="d-md-none text-dark fz-1 ms-2">人氣王</span></li>
               </ul>
-              <div class="bg-white border-start border-primary border-5 rounded-3 p-3 mb-md-4 mb-3">
-                <p class="text-dark fz-md-3 fz-md-2 mb-0">
-                  專案募資中！<br>
-                  在 <span class="BT fw-700">2021/06/14 23:59</span>  募資結束前，您都可以贊助我們！
-                </p>
-              </div>
+              <p class="bg-white border-start border-primary border-5 rounded-3 text-dark fz-md-3 fz-md-2 p-3 mb-md-4 mb-3">
+                專案募資中！<br>
+                在 <span class="BT fw-700">2021/06/14 23:59</span>  募資結束前，您都可以贊助我們！
+              </p>
               <ul class="row list-unstyled">
                 <li class="col-12 mb-2"><a href="#" class="btn btn-lg btn-primary btn-hover border-2 rounded-pill w-100 link-dark fw-700">贊助專案</a></li>
                 <li class="col-7"><a href="#" class="btn btn-lg btn-outline-gray btn-hover-outline border-2 rounded-pill w-100 fw-700"><i class="fas fa-heart me-2"></i>追蹤專案</a></li>
@@ -109,6 +104,7 @@
       </header>
 
       <main class="mb-5">
+        <!-- main nav -->
         <nav class="border-bottom border-info bg-white position-sticky top-0 to-top mb-md-5 mb-6">
           <div class="container">
             <ul class="nav list-unstyled flex-nowrap justify-content-md-start justify-content-between">
@@ -119,12 +115,11 @@
             </ul>
           </div>
         </nav>
-
+        <!-- main nav end -->
         <section class="container">
-          <div class="row gx-5">    
-
-            <section class="col-md-8">
-              <!-- nav tab -->
+          <div class="row gx-5">  
+            <!-- nav tab -->  
+            <section class="col-md-8">          
               <div class="tab-content">
                 <!-- introduction -->
                 <article class="tab-pane text-secondary mb-md-5 mb-6 active" id="Introduction" role="tabpanel" aria-labelledby="Introduction">
@@ -322,87 +317,89 @@
                   </ul>
                 </article>
               </div>
-              <!-- Sidebar Mobile -->
-              <aside class="col-md-4 d-md-none d-block">             
-                <div class="card rounded-3 mb-6">
-                  <div class="card-body">
-                    <div class="d-flex align-items-center mb-3">
-                      <img src="./assets/images/store_img.jpg" class="border border-primary border-3 rounded-circle me-3" alt="Client-pic">
-                      <div class="card-title">
-                        <h3 class="card-title text-secondary fw-500 fz-md-5 fz-4 mb-2">缺錢事務所</h3>
-                        <p class="card-text text-success fz-md-3 fz-2">已發起 1 個專案</p>
-                      </div>
+            </section>
+            <!-- sidebar -->
+            <aside class="col-md-4 sidebar-sticky">             
+              <div class="card rounded-3 mb-6">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="./assets/images/store_img.jpg" class="border border-primary border-3 rounded-circle me-3" alt="Client-pic">
+                    <div class="card-title">
+                      <h3 class="card-title text-secondary fw-500 fz-md-5 fz-4 mb-2">缺錢事務所</h3>
+                      <p class="card-text text-success fz-md-3 fz-2">已發起 1 個專案</p>
                     </div>
-                    <p class="card-text d-md-block d-none text-success mb-3">需要點錢錢做些酷酷的東西，拜託各位乾爹乾媽囉！</p>
-                    <ul class="d-flex align-items-center list-unstyled">
-                      <li class="me-2"><a href="#" class="zoom text-decoration-none d-flex justify-content-center align-items-center bg-gray text-white rounded-circle link-icon fab fa-facebook-f"></a></li>
-                      <li><a href="#" class="zoom text-decoration-none d-flex justify-content-center align-items-center bg-gray text-white rounded-circle link-icon fab fa-youtube"></a></li>
-                      <li class="ms-auto"><a href="#" class="btn btn-outline-gray btn-hover-outline border-2 rounded-pill fz-1"><i class="far fa-comment-dots me-1"></i>聯絡我們</a></li>
-                    </ul>
                   </div>
+                  <p class="card-text d-md-block d-none text-success mb-3">需要點錢錢做些酷酷的東西，拜託各位乾爹乾媽囉！</p>
+                  <ul class="d-flex align-items-center list-unstyled">
+                    <li class="me-2"><a href="#" class="zoom text-decoration-none d-flex justify-content-center align-items-center bg-gray text-white rounded-circle link-icon fab fa-facebook-f"></a></li>
+                    <li><a href="#" class="zoom text-decoration-none d-flex justify-content-center align-items-center bg-gray text-white rounded-circle link-icon fab fa-youtube"></a></li>
+                    <li class="ms-auto"><a href="#" class="btn btn-outline-gray btn-hover-outline border-2 rounded-pill fz-1"><i class="far fa-comment-dots me-1"></i>聯絡我們</a></li>
+                  </ul>
                 </div>
-                <h4 class="bg-light border-start border-end border-primary border-4 rounded-3 text-center text-secondary letter-spacing fw-700 fz-5 py-2 mb-3">選擇一個方案來支持</h4>
-                <ul class="list-unstyled">
-                  <li class="card rounded-3 mb-3">
-                    <img src="./assets/images/plan_img.jpg" class="card-img-top" alt="Project-pic">
-                    <div class="card-body pt-2">
-                      <div class="card-text d-flex justify-content-between border-bottom border-info pb-2 mb-2 text-dark fz-2">
-                        <span>限時優惠</span>
-                        <span class="BT">2 days 20:05:20</span>
-                      </div>
-                      <h4 class="card-title text-secondary fw-700 fz-4">買一送一，只有兩百組別錯過</h4>
-                      <p class="card-text text-secondary mb-2 BT fw-700 fz-6">NT$ 1600</p>
-                      <div class="card-text d-flex mb-2">
-                        <p class="bg-info text-gray rounded-3 fw-700 fz-1 py-1 px-3 me-2">已被贊助88次</p>
-                        <p class="bg-gray text-white rounded-3 fw-700 fz-1 py-1 px-3">限量<span class="text-primary">200</span>個</p>
-                      </div>
-                      <p class="card-text text-gray mb-3">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
-                      <div class="text-center">
-                        <a href="#" class="btn btn-lg btn-primary btn-hover border-2 rounded-pill text-dark fw-700 w-100 fz-3">贊助此專案</a>
-                      </div>
+              </div>
+              <h3 class="bg-light border-start border-end border-primary border-4 rounded-3 text-center text-secondary letter-spacing fw-700 fz-5 py-2 mb-3">選擇一個方案來支持</h3>
+              <ul class="list-unstyled">
+                <li class="card rounded-3 mb-3">
+                  <img src="./assets/images/plan_img.jpg" class="card-img-top" alt="Project-pic">
+                  <div class="card-body pt-2">
+                    <div class="card-text d-flex justify-content-between border-bottom border-info pb-2 mb-2 text-dark fz-2">
+                      <p>限時優惠</p>
+                      <span class="BT">2 days 20:05:20</span>
                     </div>
-                  </li>
-                  <li class="card rounded-3 mb-6">
-                    <img src="./assets/images/plan_img.jpg" class="card-img-top" alt="Project-pic">
-                    <div class="card-body pt-2">
-                      <div class="card-text d-flex justify-content-between border-bottom border-info pb-2 mb-2 text-dark fz-2">
-                        <span>限時優惠</span>
-                        <span class="BT">2 days 20:05:20</span>
-                      </div>
-                      <h4 class="card-title text-secondary fw-700 fz-4">買一送一，只有兩百組別錯過</h4>
-                      <p class="card-text text-secondary mb-2 BT fw-700 fz-6">NT$ 1600</p>
-                      <div class="card-text d-flex mb-2">
-                        <p class="bg-info text-gray rounded-3 fw-700 fz-1 py-1 px-3 me-2">已被贊助88次</p>
-                        <p class="bg-gray text-white rounded-3 fw-700 fz-1 py-1 px-3">限量<span class="text-primary">200</span>個</p>
-                      </div>
-                      <p class="card-text text-gray mb-3">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
-                      <div class="text-center">
-                        <a href="#" class="btn btn-lg btn-primary btn-hover border-2 rounded-pill text-dark fw-700 w-100 fz-3">贊助此專案</a>
-                      </div>
+                    <h3 class="card-title text-secondary fw-700 fz-4">買一送一，只有兩百組別錯過</h3>
+                    <p class="card-text text-secondary mb-2 BT fw-700 fz-6">NT$ 1600</p>
+                    <div class="card-text d-flex mb-2">
+                      <p class="bg-info text-gray rounded-3 fw-700 fz-1 py-1 px-3 me-2">已被贊助88次</p>
+                      <p class="bg-gray text-white rounded-3 fw-700 fz-1 py-1 px-3">限量<span class="text-primary">200</span>個</p>
                     </div>
-                  </li>
-                  <li class="card rounded-3 mb-3">
-                    <img src="./assets/images/plan_img.jpg" class="card-img-top" alt="Project-pic">
-                    <div class="card-body pt-2">
-                      <div class="card-text d-flex justify-content-between border-bottom border-info pb-2 mb-2 text-dark fz-2">
-                        <span>限時優惠</span>
-                        <span class="BT">2 days 20:05:20</span>
-                      </div>
-                      <h4 class="card-title text-secondary fw-700 fz-4">買一送一，只有兩百組別錯過</h4>
-                      <p class="card-text text-secondary mb-2 BT fw-700 fz-6">NT$ 1600</p>
-                      <div class="card-text d-flex mb-2">
-                        <p class="bg-info text-gray rounded-3 fw-700 fz-1 py-1 px-3 me-2">已被贊助88次</p>
-                        <p class="bg-gray text-white rounded-3 fw-700 fz-1 py-1 px-3">限量<span class="text-primary">200</span>個</p>
-                      </div>
-                      <p class="card-text text-gray mb-3">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
-                      <div class="text-center">
-                        <a href="#" class="btn btn-lg btn-primary btn-hover border-2 rounded-pill text-dark fw-700 w-100 fz-3">贊助此專案</a>
-                      </div>
+                    <p class="card-text text-gray mb-3">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
+                    <div class="text-center">
+                      <a href="#" class="btn btn-lg btn-primary btn-hover border-2 rounded-pill text-dark fw-700 w-100 fz-3">贊助此專案</a>
                     </div>
-                  </li>
-                </ul>
-              </aside>
-              <!-- Sponsorship form -->
+                  </div>
+                </li>
+                <li class="card rounded-3 mb-6">
+                  <img src="./assets/images/plan_img.jpg" class="card-img-top" alt="Project-pic">
+                  <div class="card-body pt-2">
+                    <div class="card-text d-flex justify-content-between border-bottom border-info pb-2 mb-2 text-dark fz-2">
+                      <p>限時優惠</p>
+                      <span class="BT">2 days 20:05:20</span>
+                    </div>
+                    <h3 class="card-title text-secondary fw-700 fz-4">買一送一，只有兩百組別錯過</h3>
+                    <p class="card-text text-secondary mb-2 BT fw-700 fz-6">NT$ 1600</p>
+                    <div class="card-text d-flex mb-2">
+                      <p class="bg-info text-gray rounded-3 fw-700 fz-1 py-1 px-3 me-2">已被贊助88次</p>
+                      <p class="bg-gray text-white rounded-3 fw-700 fz-1 py-1 px-3">限量<span class="text-primary">200</span>個</p>
+                    </div>
+                    <p class="card-text text-gray mb-3">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
+                    <div class="text-center">
+                      <a href="#" class="btn btn-lg btn-primary btn-hover border-2 rounded-pill text-dark fw-700 w-100 fz-3">贊助此專案</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="card rounded-3 mb-3">
+                  <img src="./assets/images/plan_img.jpg" class="card-img-top" alt="Project-pic">
+                  <div class="card-body pt-2">
+                    <div class="card-text d-flex justify-content-between border-bottom border-info pb-2 mb-2 text-dark fz-2">
+                      <p>限時優惠</p>
+                      <span class="BT">2 days 20:05:20</span>
+                    </div>
+                    <h3 class="card-title text-secondary fw-700 fz-4">買一送一，只有兩百組別錯過</h3>
+                    <p class="card-text text-secondary mb-2 BT fw-700 fz-6">NT$ 1600</p>
+                    <div class="card-text d-flex mb-2">
+                      <p class="bg-info text-gray rounded-3 fw-700 fz-1 py-1 px-3 me-2">已被贊助88次</p>
+                      <p class="bg-gray text-white rounded-3 fw-700 fz-1 py-1 px-3">限量<span class="text-primary">200</span>個</p>
+                    </div>
+                    <p class="card-text text-gray mb-3">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
+                    <div class="text-center">
+                      <a href="#" class="btn btn-lg btn-primary btn-hover border-2 rounded-pill text-dark fw-700 w-100 fz-3">贊助此專案</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </aside>
+            <!-- Sponsorship form -->
+            <section class="col-md-8">
               <img src="./assets/images/icon_heart.svg" class="mx-auto d-block" alt="sponsor-icon">
               <div class="text-center mb-md-4 mb-3">
                 <div class="d-flex justify-content-center align-items-center flex-wrap border-bottom border-primary border-3 position-relative pt-4">
@@ -460,87 +457,6 @@
                 </div>
               </form>     
             </section>
-
-            <aside class="col-md-4 d-md-block d-none position-sticky sidebar-sticky">             
-              <div class="card rounded-3 mb-6">
-                <div class="card-body">
-                  <div class="d-flex align-items-center mb-3">
-                    <img src="./assets/images/store_img.jpg" class="border border-primary border-3 rounded-circle me-3" alt="Client-pic">
-                    <div class="card-title">
-                      <h3 class="card-title text-secondary fw-500 fz-md-5 fz-4 mb-2">缺錢事務所</h3>
-                      <p class="card-text text-success fz-md-3 fz-2">已發起 1 個專案</p>
-                    </div>
-                  </div>
-                  <p class="card-text d-md-block d-none text-success mb-3">需要點錢錢做些酷酷的東西，拜託各位乾爹乾媽囉！</p>
-                  <ul class="d-flex align-items-center list-unstyled">
-                    <li class="me-2"><a href="#" class="zoom text-decoration-none d-flex justify-content-center align-items-center bg-gray text-white rounded-circle link-icon fab fa-facebook-f"></a></li>
-                    <li><a href="#" class="zoom text-decoration-none d-flex justify-content-center align-items-center bg-gray text-white rounded-circle link-icon fab fa-youtube"></a></li>
-                    <li class="ms-auto"><a href="#" class="btn btn-outline-gray btn-hover-outline border-2 rounded-pill fz-1"><i class="far fa-comment-dots me-1"></i>聯絡我們</a></li>
-                  </ul>
-                </div>
-              </div>
-              <h4 class="bg-light border-start border-end border-primary border-4 rounded-3 text-center text-secondary letter-spacing fw-700 fz-5 py-2 mb-3">選擇一個方案來支持</h4>
-              <ul class="list-unstyled">
-                <li class="card rounded-3 mb-3">
-                  <img src="./assets/images/plan_img.jpg" class="card-img-top" alt="Project-pic">
-                  <div class="card-body pt-2">
-                    <div class="card-text d-flex justify-content-between border-bottom border-info pb-2 mb-2 text-dark fz-2">
-                      <span>限時優惠</span>
-                      <span class="BT">2 days 20:05:20</span>
-                    </div>
-                    <h4 class="card-title text-secondary fw-700 fz-4">買一送一，只有兩百組別錯過</h4>
-                    <p class="card-text text-secondary mb-2 BT fw-700 fz-6">NT$ 1600</p>
-                    <div class="card-text d-flex mb-2">
-                      <p class="bg-info text-gray rounded-3 fw-700 fz-1 py-1 px-3 me-2">已被贊助88次</p>
-                      <p class="bg-gray text-white rounded-3 fw-700 fz-1 py-1 px-3">限量<span class="text-primary">200</span>個</p>
-                    </div>
-                    <p class="card-text text-gray mb-3">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
-                    <div class="text-center">
-                      <a href="#" class="btn btn-lg btn-primary btn-hover border-2 rounded-pill text-dark fw-700 w-100 fz-3">贊助此專案</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="card rounded-3 mb-6">
-                  <img src="./assets/images/plan_img.jpg" class="card-img-top" alt="Project-pic">
-                  <div class="card-body pt-2">
-                    <div class="card-text d-flex justify-content-between border-bottom border-info pb-2 mb-2 text-dark fz-2">
-                      <span>限時優惠</span>
-                      <span class="BT">2 days 20:05:20</span>
-                    </div>
-                    <h4 class="card-title text-secondary fw-700 fz-4">買一送一，只有兩百組別錯過</h4>
-                    <p class="card-text text-secondary mb-2 BT fw-700 fz-6">NT$ 1600</p>
-                    <div class="card-text d-flex mb-2">
-                      <p class="bg-info text-gray rounded-3 fw-700 fz-1 py-1 px-3 me-2">已被贊助88次</p>
-                      <p class="bg-gray text-white rounded-3 fw-700 fz-1 py-1 px-3">限量<span class="text-primary">200</span>個</p>
-                    </div>
-                    <p class="card-text text-gray mb-3">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
-                    <div class="text-center">
-                      <a href="#" class="btn btn-lg btn-primary btn-hover border-2 rounded-pill text-dark fw-700 w-100 fz-3">贊助此專案</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="card rounded-3 mb-3">
-                  <img src="./assets/images/plan_img.jpg" class="card-img-top" alt="Project-pic">
-                  <div class="card-body pt-2">
-                    <div class="card-text d-flex justify-content-between border-bottom border-info pb-2 mb-2 text-dark fz-2">
-                      <span>限時優惠</span>
-                      <span class="BT">2 days 20:05:20</span>
-                    </div>
-                    <h4 class="card-title text-secondary fw-700 fz-4">買一送一，只有兩百組別錯過</h4>
-                    <p class="card-text text-secondary mb-2 BT fw-700 fz-6">NT$ 1600</p>
-                    <div class="card-text d-flex mb-2">
-                      <p class="bg-info text-gray rounded-3 fw-700 fz-1 py-1 px-3 me-2">已被贊助88次</p>
-                      <p class="bg-gray text-white rounded-3 fw-700 fz-1 py-1 px-3">限量<span class="text-primary">200</span>個</p>
-                    </div>
-                    <p class="card-text text-gray mb-3">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
-                    <div class="text-center">
-                      <a href="#" class="btn btn-lg btn-primary btn-hover border-2 rounded-pill text-dark fw-700 w-100 fz-3">贊助此專案</a>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </aside>
-
           </div>
         </section>
       </main>

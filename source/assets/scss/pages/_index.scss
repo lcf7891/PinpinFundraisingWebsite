@@ -6,7 +6,7 @@
     background-color: #f7f7f7;
 }
 .rounded-r {
-    border-radius: 32px;
+    border-radius: 45px;
 }
 .icon-size {
     width: 20px;
@@ -45,7 +45,11 @@
     height: 30px;
 }
 .sidebar-sticky {
-    height: calc(100vh - 90px);
-    top: 90px;
-    overflow: auto;
+    @include md {
+        position: sticky;
+        height: calc(100vh - 90px);
+        top: 90px;
+        overflow: auto;
+    }
+    
 }
