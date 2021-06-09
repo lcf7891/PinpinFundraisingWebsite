@@ -1,6 +1,6 @@
 # 21 天用 Bootstrap 5 做募資網站版型
 
-## [作業連結](https://lcf7891.github.io/PinpinFundraisingWebsite/)
+## [Demo連結](https://lcf7891.github.io/PinpinFundraisingWebsite/)
 
 ## gulp deploy -- TypeError: Cannot read property '0' of null
 
