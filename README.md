@@ -1,4 +1,4 @@
-# 21 天 Bootstrap 5 募資網站
+# 21 天用 Bootstrap 5 做募資網站版型
 
 ## [作業連結](https://lcf7891.github.io/PinpinFundraisingWebsite/)
 
